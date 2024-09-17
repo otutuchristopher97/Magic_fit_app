@@ -206,16 +206,19 @@ class _AddWorkoutScreenState extends State<AddWorkoutScreen> {
                     ),
             ),
             SizedBox(
+              height: 50,
               width: double.infinity,
               child: ElevatedButton(
                 style: ElevatedButton.styleFrom(
                   backgroundColor: Pallet.primary,
+                  
                 ),
                 onPressed: _saveWorkout,
                 child: Text(
-                    widget.index != null ? 'Update Workout' : 'Save Workout'),
+                    widget.index != null ? 'Update Workout' : 'Save Workout', style: TextStyle(color: Colors.white),),
               ),
             ),
+            const SizedBox(height: 50,)
           ],
         ),
       ),
